@@ -1,0 +1,48 @@
+.main-breadcrumb {
+    
+    display: table;
+    margin-top: .2rem;
+
+    ul {
+        li {
+            float: left;
+
+            a {
+                font-size: .75rem;
+                color: $dark-blue;
+                position: relative;
+                padding-right: 1rem;
+
+                @include transition(color 0.3s);
+
+                &:hover {
+                    color: darken($dark-blue, 15%);
+                }
+
+                &.active {
+                    color: $medium-grey;
+
+                    &:hover {
+                        color: lighten($medium-grey, 15%);
+                    }
+                }
+
+                &:after {
+                    top: .3rem;
+                    content: '>';
+                    font-size: .5rem;
+                    margin-left: .4rem;
+                    position: absolute;
+                }
+            }
+
+            &:last-child {
+                a {
+                    &:after {
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
+}

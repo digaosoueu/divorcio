@@ -1,0 +1,142 @@
+.icon {
+    background: url(../images/spritesheets.png) no-repeat;
+    display: inline-block;
+
+    &-logo {
+        background-position: -8px -7px;
+        width: 173px;
+        height: 95px;
+    }
+
+    &-arrow-down {
+        background-position: -133px -154px;
+        width: 14px;
+        height: 8px;
+    }
+
+    &-arrow-right {
+        background-position: -137px -134px;
+        width: 8px;
+        height: 14px;
+    }
+
+    &-call-center {
+        background-position: -68px -183px;
+        width: 53px;
+        height: 45px;
+
+        &-inverse {
+            background-position: -68px -236px;
+            width: 53px;
+            height: 45px;
+        }
+    }
+
+    &-tel {
+        background-position: -86px -124px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &-form {
+        background-position: -33px -124px;
+        width: 29px;
+        height: 30px;
+    }
+
+    &-file {
+        background-position: -30px -164px;
+        width: 28px;
+        height: 30px;
+
+        &-small {
+            background-position: -65px -350px;
+            width: 23px;
+            height: 24px;
+        }
+    }
+
+    &-choice {
+        background-position: -31px -204px;
+        width: 29px;
+        height: 30px;
+    }
+
+    &-clock {
+        background-position: -30px -243px;
+        width: 29px;
+        height: 30px;
+
+        &-small {
+            background-position: -37px -284px;
+            width: 15px;
+            height: 15px;
+        }
+
+        &-pink {
+            background-position: -31px -380px;
+            width: 24px;
+            height: 24px;
+
+            &-small {
+                background-position: -65px -383px;
+                width: 21px;
+                height: 21px;
+            }
+        }
+    }
+
+    &-chat {
+        background-position: -37px -309px;
+        width: 15px;
+        height: 15px;
+    }
+
+    &-check {
+        background-position: -31px -350px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &-download {
+        background-position: -225px -309px;
+        width: 29px;
+        height: 29px;
+    }
+
+    &-pagseguro {
+        background-position: 0 -437px;
+        width: 320px;
+        height: 63px;
+    }
+
+    &-kids {
+        background-position: -200px -13px;
+        width: 65px;
+        height: 81px;
+
+        &-green {
+            background-position: -277px -12px;
+            width: 65px;
+            height: 81px;
+        }
+    }
+
+    &-house {
+        background-position: -200px -112px;
+        width: 65px;
+        height: 81px;
+
+        &-green {
+            background-position: -276px -112px;
+            width: 65px;
+            height: 81px;
+        }
+    }
+
+    &-laywer {
+        background-position: -200px -214px;
+        width: 65px;
+        height: 81px;
+    }
+}

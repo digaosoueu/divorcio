@@ -1,0 +1,214 @@
+.main-full-banner {
+    background: url(../images/full-banner.jpg) no-repeat center center;
+    background-size: cover;
+    height: 480px;
+    color: #fff;
+    width: 100%;
+
+    header {
+        margin: 7.5rem 0 1.3rem 0;
+        text-transform: uppercase;
+
+        h2 {
+            line-height: 1.1;
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: $light-aqua-green;
+        }
+
+        strong {
+            color: #fff;
+            display: block;
+            font-weight: 700;
+            font-size: 3.4375rem;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 1.2;
+        max-width: 520px;
+        font-size: 1.375rem;
+        margin-bottom: 1.875rem;
+    }
+
+    strong {
+        color: $light-aqua-green;
+        font-weight: 700;
+    }
+}
+
+.main-call-center {
+    background: url(../images/header-default-bg.jpg) repeat-y;
+    border-bottom: 1px solid #ebebeb;
+    background-size: 100%;
+    position: relative;
+    min-height: 75px;
+
+    &:after {
+        right: 0;
+        content: '';
+        bottom: 75px;
+        width: 49.3%;
+        height: 20px;
+        position: absolute;
+        background-color: #0e4679;
+    }
+
+    .column-large {
+        &:first-child {
+            padding: .8rem 0 1rem 0;
+        }
+
+        &:last-child {
+            padding: .7rem 0;
+        }
+
+        .item-separator {
+            margin: 0 .5rem;
+        }
+
+        p {
+            width: 70%;
+            float: left;
+            max-width: 400px;
+            font-size: 1rem;
+            line-height: 1.2;
+            font-weight: 300;
+            margin-top: .5rem;
+            margin-left: 1rem;
+            color: $dark-blue;
+            font-style: italic;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+
+        small {
+            font-size: .875rem;
+        }
+
+        ul {
+            li {
+                color: #fff;
+                position: relative;
+                display: inline-block;
+                font-size: 1.37500rem;
+
+                i {
+                    top: 5px;
+                    position: relative;
+                    margin-right: .3125rem;
+                }
+
+                a {
+                    color: #fff;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.main-info-contact {
+    padding: 3rem 0;
+
+    p {
+        line-height: 1.4;
+        text-align: center;
+        color: $medium-grey;
+        font-size: 1.37500rem;
+
+        a {
+            font-weight: 500;
+            color: $aqua-green;
+
+            @include transition(color 0.5s);
+
+            &:hover {
+                color: darken($aqua-green, 10%);
+            }
+        }
+    }
+}
+
+.main-steps {
+    background: url(../images/steps-bg.jpg) no-repeat left center;
+    border: 1px solid #ebebeb;
+    border-left: 0;
+    border-right: 0;
+    background-size: cover;
+
+    .column-large.last {
+        padding-left: 6.5rem;
+    }
+
+    header {
+        margin: 1.3rem 0;
+
+        h2 {
+            font-weight: 500;
+            color: $dark-blue;
+            font-size: 1.75rem;
+            text-transform: uppercase;
+        }
+    }
+
+    li {
+        margin-bottom: 1.5rem;
+
+        i {
+            float: left;
+        }
+
+        .icon {
+            &-choice,
+            &-clock {
+                top: 25px;
+                position: relative;
+            }
+        }
+    }
+
+    strong {
+        font-weight: 500;
+
+        span {
+            color: $aqua-green;
+        }
+    }
+
+    p {
+        line-height: 1.5;
+        max-width: 470px;
+        font-size: 1.125rem;
+        color: $medium-grey;
+        margin-left: 3.75rem;
+    }
+}
+
+.main-call-video {
+    .fl-right {
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    figure {
+        margin-top: 3.125rem;
+        text-align: center;
+    }
+
+    p {
+        float: left;
+        font-size: 1rem;
+        font-weight: 300;
+        color: $dark-blue;
+        font-style: italic;
+        margin-right: 1.875rem;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+}

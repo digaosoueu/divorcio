@@ -1,0 +1,56 @@
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+@mixin border-radius($border-radius) {
+    border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+}
+
+@mixin setProperty($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes animatefadeIn {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes jumpTo {
+    50% {
+        background-position: 0 -362px;
+        width: 324px;
+        height: 64px;
+    }
+
+    50.1% {
+        background-position: 0 -437px;
+        width: 320px;
+        height: 63px;
+    }
+
+    100% {
+        background-position: 0 -362px;
+        width: 324px;
+        height: 64px;
+    }
+}

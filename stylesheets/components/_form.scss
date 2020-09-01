@@ -1,0 +1,161 @@
+::-webkit-input-placeholder {
+    color: $light-aqua-green;
+    font-size: .875rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    color: $light-aqua-green;
+    font-size: .875rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder {
+    color: $light-aqua-green;
+    font-size: .875rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+:-moz-placeholder {
+    color: $light-aqua-green;
+    font-size: .875rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+form {
+    ul {
+        li {
+            width: 100%;
+            display: table;
+            margin-bottom: 1rem;
+
+            &:not(.column) {
+                clear: both;
+            }
+        }
+    }
+}
+
+label {
+    color: #aaa;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+textarea {
+    width: 100%;
+    padding: 1.2rem 1rem;
+
+    @include border-radius(15px);
+
+    border: 1px solid $aqua-green;
+
+    @include transition(all 0.2s);
+
+    &:focus {
+        border-left: 3px solid $aqua-green;
+    }
+}
+
+input[type="password"] {
+    color: $aqua-green;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.select-type {
+    right: 0;
+    width: 45%;
+    display: none;
+    margin-top: 1.1rem;
+    position: absolute;
+
+    li {
+        text-align: center;
+        margin-bottom: .1rem;
+
+        a {
+            color: #fff;
+            width: 100%;
+            display: block;
+            padding: 1rem 0;
+            font-size: .8125rem;
+            background-color: $aqua-green;
+            border: 1px solid $aqua-green;
+
+            @include border-radius(50px);
+            @include transition(background-color 0.5s);
+
+            &:hover {
+                background-color: lighten($aqua-green, 5%);
+            }
+        }
+    }
+}
+
+.file-wrapper {
+    color: #fff;
+    float: right;
+    height: 35px;
+    width: 115px;
+    cursor: pointer;
+    position: relative;
+    @include border-radius(10px);
+    background-color: #505050;
+
+    @include transition(background-color .3s);
+    
+    &:hover {
+
+        background-color: darken(#505050,10%);
+
+    }
+
+    &.checked {
+        background-color: $aqua-green;
+
+        &:after {
+            top: 5px;
+            right: -30px;   
+            content: '';
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            background: url(../images/spritesheets.png) no-repeat -31px -350px;
+        }
+    }
+
+    label {
+        color: #fff;
+        cursor: pointer;
+        font-size: .75rem;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+
+    input[type="file"] {
+        z-index: 2;
+        border: 0;
+        opacity: 0;
+        padding: 0;
+        -moz-opacity: 0;
+        -webkit-opacity: 0;
+        position: relative;
+    }
+}

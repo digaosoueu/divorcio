@@ -1,0 +1,55 @@
+.main-accordion {
+    li {
+        margin-bottom: 1.875rem;
+    }
+
+    .accordion-control {
+        cursor: pointer;
+        color: $aqua-green;
+        position: relative;
+        font-size: 1.125rem;
+        text-indent: 1.875rem;
+
+        @include transition(color 0.3s);
+
+        &:hover {
+            color: lighten($dark-blue, 5%);
+
+            &:before {
+                background-position: -137px -115px;
+                width: 8px;
+                height: 14px;
+            }
+        }
+
+        &:before {
+            left: 0;
+            top: 3px;
+            width: 8px;
+            content: '';
+            height: 14px;
+            position: absolute;
+            background: url(../images/spritesheets.png) no-repeat -137px -134px;
+
+            @include transition(all 0.3s);
+        }
+
+        &.active:before {
+            transform: rotate(90deg);
+        }
+    }
+
+    .accordion-panel {
+        display: none;
+        font-size: 1rem;
+        text-indent: 1.875rem;
+        border-bottom: 1px solid #ebebeb;
+
+        p {
+            font-size: 1rem;
+            margin-top: 1rem;
+            color: $light-grey;
+            margin-bottom: 1.25rem;
+        }
+    }
+}

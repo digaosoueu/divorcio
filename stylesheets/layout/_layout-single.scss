@@ -1,0 +1,359 @@
+.main-single-header {
+    background: url(../images/header-single-bg.jpg) no-repeat center center;
+    background-size: cover;
+
+    p {
+        font-size: 1rem;
+        line-height: 1.2;
+        font-weight: 300;
+        font-style: italic;
+        color: $light-aqua-green;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+
+    small {
+        font-size: .875rem;
+    }
+
+    ul {
+        width: 100%;
+        text-align: right;
+
+        li {
+            color: #fff;
+            font-size: 1.375rem;
+            display: inline-block;
+
+            a {
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .column-large {
+        padding: 10px 0;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        &-tel {
+            margin-right: .3rem;
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    .item-separator {
+        margin: 0 .5rem;
+    }
+
+    .icon-call-center-inverse {
+        margin-right: 1rem;
+    }
+}
+
+.main-single {
+    header {
+        margin: 3.5rem 0 3.125rem 0;
+
+        h2 {
+            font-weight: 500;
+            color: $dark-blue;
+            line-height: 1.2;
+            font-size: 1.75rem;
+            margin-bottom: 2.8rem;
+            text-transform: uppercase;
+
+            &:before {
+                content: '-';
+                margin-right: .5rem;
+            }
+        }
+
+        p {
+            line-height: 1.2;
+            font-size: 1.125rem;
+            color: $medium-grey;
+        }
+
+        strong {
+            font-weight: 500;
+            color: $aqua-green;
+        }
+    }
+
+    h3 {
+        font-weight: 500;
+        color: $aqua-green;
+        font-size: 1.125rem;
+        margin-bottom: 1.875rem;
+        text-transform: uppercase;
+    }
+
+    font-
+    figure {
+        margin-bottom: 4.375rem;
+
+        figcaption {
+            font-weight: 400;
+            font-size: .85rem;
+            font-style: italic;
+            color: $light-grey;
+            margin-top: .2rem;
+        }
+    }
+}
+
+.info-form {
+    label {
+        display: inline;
+        font-size: 1.125rem;
+    }
+
+    .obs-form {
+        font: {
+            weight: 400;
+            size: 1rem;
+            style: italic;
+        };
+        margin: 0;
+        line-height: 1.2;
+        color: $dark-blue;
+
+        a {
+            color: $dark-blue;
+            border-bottom: 2px solid #abb7c7;
+
+            strong {
+                font: {
+                    weight: 600;
+                };
+            }
+        }
+    }
+}
+
+.main-form {
+    .general-info {
+        label {
+            height: 35px;
+        }
+
+        .column-medium {
+            width: 31%;
+            margin-right: 3.5%;
+        }
+    }
+
+    li {
+        color: #aaa;
+        font-size: 1rem;
+        font-weight: 400;
+
+        p {
+            font-weight: 500;
+            font-size: 1.125rem;
+            margin: 1rem 0;
+        }
+
+        .date-example {
+            font-weight: 400;
+            font-size: .75rem;
+            color: $aqua-green;
+            font-style: italic;
+        }
+
+        span {
+            margin: 1rem 0;
+            display: block;
+        }
+
+        label {
+            float: left;
+
+            // height: 35px;
+            margin-right: 1rem;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        input[type="radio"] {
+            margin-right: .3rem;
+
+            &:nth-of-type(2n) {
+                margin-left: 3rem;
+            }
+        }
+    }
+
+    .column-one {
+        width: 21.5%;
+        margin-right: 2%;
+
+        label {
+            width: 100%;
+        }
+
+        input {
+            text-align: center;
+        }
+    }
+
+    .form-register {
+        label {
+            margin: 0;
+            height: auto;
+            margin-bottom: .5rem;
+        }
+
+        .call-register {
+            width: 100%;
+            font-weight: 500;
+            color: $aqua-green;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+        }
+
+        .call-safety {
+            font-weight: 400;
+            color: $dark-blue;
+            font-size: .75rem;
+            font-style: italic;
+        }
+    }
+
+    .input-insert-name {
+        border: 0;
+        padding: .5rem;
+        border-bottom: 1px solid #ededed;
+
+        &:focus {
+            border-left: 0;
+        }
+    }
+
+    .btn-register {
+        margin-top: 1.5rem;
+    }
+}
+
+.main-documentations-types {
+    background: url(../images/bg-documentation-types.png) no-repeat -130px -100px;
+    width: 100%;
+    padding: 5% 0;
+    display: table;
+    margin: 1.5% 0;
+    border-top: 1px solid #ebebeb;
+
+    ul {
+        li {
+            font-size: 1rem;
+            text-indent: -13px;
+            line-height: 1.2;
+            font-style: italic;
+            color: $light-grey;
+            margin-bottom: 1.3rem;
+
+            &:before {
+                content: '-';
+                margin-right: .3125rem;
+            }
+        }
+    }
+
+    strong {
+        font-weight: 500;
+    }
+
+    h3 {
+        text-transform: initial;
+        margin-bottom: 2.2rem;
+    }
+}
+
+.main-info-register {
+    padding: 3% 0 1.5%;
+    margin: 0 auto;
+    width: 80%;
+
+    p {
+        line-height: 1.2;
+        color: $dark-blue;
+        text-align: center;
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+
+        strong {
+            font-weight: 500;
+        }
+
+        span {
+            color: $aqua-green;
+        }
+    }
+}
+
+.main-info-payment {
+    margin-bottom: 3rem;
+
+    header {
+        margin: 2rem 0 1.5rem;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.2;
+        margin-bottom: 1.2rem;
+        color: $light-grey;
+    }
+
+    span {
+        strong {
+            font-weight: 900;
+        }
+    }
+
+    strong {
+        font-weight: 500;
+    }
+
+    .payment-obs {
+        font-weight: 400;
+        font-size: .875rem;
+        font-style: italic;
+    }
+}
+
+.main-login {
+    p {
+        color: $light-grey;
+    }
+}
+
+.main-follow-process {
+    p {
+        display: inline-block;
+
+        &:first-of-type {
+            margin-right: 4.375rem;
+        }
+    }
+
+    i {
+        top: 5px;
+        position: relative;
+        margin-right: 1rem;
+    }
+}

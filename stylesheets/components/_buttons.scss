@@ -1,0 +1,119 @@
+.btn {
+    color: $aqua-green;
+    border-radius: 50px;
+    font-size: .8125rem;
+    position: relative;
+    text-transform: uppercase;
+    border: 1px solid $aqua-green;
+    padding: 1rem 4rem 1rem 3rem;
+
+    @include transition(all 0.5s);
+
+    &:after {
+        content: '';
+        position: absolute;
+        margin-left: .5rem;
+
+        @include transition(all 0.3s);
+    }
+
+    &-login {
+        &:after {
+            width: 18px;
+            height: 14px;
+            background: url(../images/spritesheets.png) no-repeat -86px -152px;
+        }
+    }
+
+    &-sign-in {
+        &:after {
+            width: 15px;
+            height: 13px;
+            background: url(../images/spritesheets.png) no-repeat -110px -151px;
+        }
+
+        &:hover:after {
+            transform: translateX(5px);
+        }
+    }
+
+    &-form {
+        font-size: .75rem;
+        color: $light-aqua-green;
+        @include border-radius(10px);
+        background-color: $aqua-green;
+
+        &:hover {
+            color: #fff;
+            background-color: lighten($aqua-green, 5%);
+        }
+    }
+
+    &-register {
+        color: #fff;
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.125rem;
+        background-color: $aqua-green;
+
+        @include border-radius(10px);
+
+        &:hover {
+            background-color: lighten($aqua-green, 5%);
+        }
+    }
+
+    &-call-litigioso {
+        border: 0;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+        position: relative;
+        text-transform: lowercase;
+        background: -moz-linear-gradient(#084479, #2ca896);
+        background: -webkit-linear-gradient(#084479, #2ca896);
+        background: -ms-linear-gradient(#084479, #2ca896);
+        background: -o-linear-gradient(#084479, #2ca896);
+        background: linear-gradient(#084479, #2ca896);
+
+
+
+        &:after {
+            width: 18px;
+            height: 14px;
+            background: url(../images/spritesheets.png) no-repeat -152px -150px;
+
+            @include transition(all .3s);
+        }
+
+        &:hover:after {
+            background-position: -152px -130px;
+        }
+    }
+
+    &-call-extrajudicial {
+        border: 0;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+        position: relative;
+        text-transform: lowercase;
+        background: -moz-linear-gradient(#0e4679, #2a7bc5);
+        background: -webkit-linear-gradient(#0e4679, #2a7bc5);
+        background: -ms-linear-gradient(#0e4679, #2a7bc5);
+        background: -o-linear-gradient(#0e4679, #2a7bc5);
+        background: linear-gradient(#0e4679, #2a7bc5);
+
+        &:after {
+            width: 18px;
+            height: 14px;
+            background: url(../images/spritesheets.png) no-repeat -152px -150px;
+
+            @include transition(all .3s);
+        }
+
+        &:hover:after {
+            background-position: -152px -130px;
+        }
+    }
+}

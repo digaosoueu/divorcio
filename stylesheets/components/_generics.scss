@@ -1,0 +1,46 @@
+.animatefadeIn {
+    animation: animatefadeIn 2s alternate infinite;
+}
+
+.border-top-light {
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    top: -3px;
+}
+
+.required-fields {
+    font-weight: 400;
+    margin-left: 1rem;
+    font-size: .875rem;
+    color: $aqua-green;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.forget-password {
+    font-weight: 400;
+    font-style: italic;
+    font-size: .875rem;
+    color: $aqua-green;
+    border-bottom: 1px solid $aqua-green;
+
+    @include transition(color 0.3s);
+
+    &:hover {
+        color: darken($aqua-green, 15%);
+    }
+}
+
+.info-process {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &-send {
+        color: $aqua-green !important;
+    }
+
+    &-waiting {
+        color: $info-error !important;
+    }
+}
